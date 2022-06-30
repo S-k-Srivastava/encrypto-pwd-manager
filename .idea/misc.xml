@@ -18,7 +18,8 @@
         <entry key="app/src/main/res/drawable/topcurve.xml" value="0.193" />
         <entry key="app/src/main/res/drawable/transulentbg.xml" value="0.193" />
         <entry key="app/src/main/res/layout-night/activity_pin_verify.xml" value="0.16757246376811594" />
-        <entry key="app/src/main/res/layout/activity_add_ids.xml" value="0.16757246376811594" />
+        <entry key="app/src/main/res/layout-v23/rv_rows.xml" value="0.2078125" />
+        <entry key="app/src/main/res/layout/activity_add_ids.xml" value="0.1718683197947841" />
         <entry key="app/src/main/res/layout/activity_biometric.xml" value="0.16757246376811594" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1718683197947841" />
         <entry key="app/src/main/res/layout/activity_pin_verify.xml" value="0.16757246376811594" />
@@ -26,7 +27,9 @@
         <entry key="app/src/main/res/layout/activity_show_ids.xml" value="0.16757246376811594" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.16772438803263826" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.16772438803263826" />
+        <entry key="app/src/main/res/layout/key_dailog.xml" value="0.16772438803263826" />
         <entry key="app/src/main/res/layout/rv_rows.xml" value="0.16757246376811594" />
+        <entry key="app/src/main/res/layout/widget_one.xml" value="0.16772438803263826" />
       </map>
     </option>
   </component>

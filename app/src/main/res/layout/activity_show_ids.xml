@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/accent1"
+    android:animateLayoutChanges="true"
+    tools:context=".ShowIDs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/accent1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_credentials"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:queryHint="@string/search_here"
+        android:id="@+id/searchAccount"
+        android:contextClickable="true"
+        android:backgroundTint="@color/primarybg"
+        android:background="@drawable/btnbg"
+        android:textColorHint="@color/whiteandblack"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:background="@drawable/topcurve"
+        android:elevation="30dp"
+        android:layout_height="match_parent"
+        android:id="@+id/credentialDataRv"/>
+
+</LinearLayout>

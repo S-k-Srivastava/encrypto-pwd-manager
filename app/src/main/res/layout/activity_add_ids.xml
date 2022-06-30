@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/accent1"
+    android:layout_height="match_parent"
+    tools:context=".AddIds">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:textAlignment="center"
+        android:id="@+id/addCredentials_header"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/add_credentails"
+        android:textColor="@color/white"
+        />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/topcurve"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:background="@drawable/topcurve"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="10dp"
+                    android:outlineAmbientShadowColor="#43a047"
+                    android:outlineSpotShadowColor="#43a047"
+                    android:layout_marginVertical="50dp"
+                    android:backgroundTint="@color/primarybg"
+                    android:layout_marginHorizontal="30dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_margin="30dp"
+                            android:src="@drawable/add"/>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/primarybg"
+                            app:hintEnabled="false">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/primarybg"
+                                android:layout_marginHorizontal="30dp"
+                                android:id="@+id/accountType"
+                                android:maxLines="1"
+                                android:hint="@string/account_type"
+                                android:padding="15dp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/primarybg"
+                            app:hintEnabled="false">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:background="@color/primarybg"
+                                android:id="@+id/username"
+                                android:maxLines="1"
+                                android:hint="@string/username"
+                                android:padding="15dp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="80dp"
+                            android:background="@color/primarybg"
+                            app:hintEnabled="false"
+                            app:passwordToggleEnabled="true">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="30dp"
+                                android:id="@+id/password"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:hint="@string/password"
+                                android:background="@color/primarybg"
+                                android:padding="15dp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/btnbg"
+                            android:text="@string/add"
+                            android:id="@+id/addData"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+</LinearLayout>
