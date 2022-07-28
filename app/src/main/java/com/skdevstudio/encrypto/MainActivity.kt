@@ -21,7 +21,6 @@ import com.google.firebase.ktx.Firebase
 import com.skdevstudio.encrypto.databinding.ActivityMainBinding
 import java.security.SecureRandom
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -33,7 +32,6 @@ class MainActivity : AppCompatActivity() {
     val special : String = ""
     private lateinit  var mydialog : Dialog
 
-
     @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,9 +39,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         database = Firebase.database.reference
 
-
         restoreFirstTime()
-
 
         binding.addDetailsBtn.setOnClickListener {
             startActivity(Intent(this, AddIds::class.java))
