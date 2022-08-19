@@ -14,22 +14,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Encrypto">
         <activity
-            android:name=".SignUp"
+            android:name="com.skdevstudio.encrypto.SignUp"
             android:exported="false" />
         <activity
-            android:name=".BiometricActivity"
+            android:name="com.skdevstudio.encrypto.BiometricActivity"
             android:exported="false" />
         <activity
-            android:name=".AddIds"
+            android:name="com.skdevstudio.encrypto.AddIds"
             android:exported="false" />
         <activity
-            android:name=".ShowIDs"
+            android:name="com.skdevstudio.encrypto.ShowIDs"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.skdevstudio.encrypto.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.skdevstudio.encrypto.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

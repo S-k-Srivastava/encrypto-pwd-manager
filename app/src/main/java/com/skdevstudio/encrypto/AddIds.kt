@@ -78,7 +78,7 @@ class AddIds : AppCompatActivity() {
             binding.accountType.isEnabled = false
             result = db.update("USERDATA",cv, "ACCOUNT_TYPE=?", arrayOf(toUpdate))
             Toast.makeText(this, "Updated Successfully!", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this,ShowIDs::class.java))
+            startActivity(Intent(this, ShowIDs::class.java))
             finish()
             db.close()
         }else{

@@ -1,19 +1,13 @@
 package com.skdevstudio.encrypto
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.app.Dialog
 import android.content.*
 import android.database.Cursor
 import android.os.Bundle
-import android.view.View
-import android.view.WindowManager
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
@@ -93,7 +87,7 @@ class MainActivity : AppCompatActivity() {
             .setCancelable(false)
             .setPositiveButton("Logout") { dialog, id ->
                 FirebaseAuth.getInstance().signOut()
-                startActivity(Intent(this,SignUp::class.java))
+                startActivity(Intent(this, SignUp::class.java))
             }
             .setNegativeButton("Cancel") { dialog, id ->
                 dialog.dismiss()

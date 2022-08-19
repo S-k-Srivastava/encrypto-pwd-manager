@@ -2,14 +2,12 @@ package com.skdevstudio.encrypto
 
 import android.annotation.SuppressLint
 import android.app.Activity
-import android.app.AlertDialog
 import android.app.Dialog
 import android.content.*
 import android.database.Cursor
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
-import android.text.InputType
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,10 +15,9 @@ import android.view.WindowManager
 import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.AppCompatButton
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputLayout
+import com.skdevstudio.encrypto.R
 import java.lang.Exception
 import java.security.MessageDigest
 import java.util.*
@@ -38,6 +35,7 @@ class CustomAdapter(context: Context,accountType : ArrayList<String>,username : 
     private var pvt_key : String = "3xh2B0l6v6VpCWr5T4CHBA=="
     private lateinit var mydialog : Dialog
     private var devKey : String = "4LOQWCIPY5eQfTmf51P6LA=="
+
 
 
     var context: Context
@@ -60,7 +58,7 @@ class CustomAdapter(context: Context,accountType : ArrayList<String>,username : 
         this.password = password
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomAdapter.MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val layoutInflater : LayoutInflater = LayoutInflater.from(context)
         val view : View = layoutInflater.inflate(R.layout.rv_rows,parent,false)
         return MyViewHolder(view,mListner)
@@ -68,7 +66,7 @@ class CustomAdapter(context: Context,accountType : ArrayList<String>,username : 
 
     @RequiresApi(Build.VERSION_CODES.O)
     @SuppressLint("SetTextI18n", "Recycle")
-    override fun onBindViewHolder(holder: CustomAdapter.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.accountTypeTextView.text = accountType.get(position)
         holder.usernameTextView.text = "Username : ${username.get(position)}"
         holder.passwordTextView.text = "Password :  ${password.get(position)}"
@@ -131,7 +129,7 @@ class CustomAdapter(context: Context,accountType : ArrayList<String>,username : 
         }
 
         holder.editBtn.setOnClickListener {
-            val intent : Intent = Intent(context,AddIds::class.java)
+            val intent : Intent = Intent(context, AddIds::class.java)
             intent.putExtra("AccountType",accountType.get(position))
             context.startActivity(intent)
         }
@@ -167,7 +165,7 @@ class CustomAdapter(context: Context,accountType : ArrayList<String>,username : 
                                 ))
                         }
                         dialog.dismiss()
-                        val intent : Intent = Intent(context,ShowIDs::class.java)
+                        val intent : Intent = Intent(context, ShowIDs::class.java)
                         context.startActivity(intent)
                         val con = context as Activity
                         con.finish()

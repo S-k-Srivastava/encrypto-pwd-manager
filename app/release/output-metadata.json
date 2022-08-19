@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.skdevstudio.encrypto",
+  "applicationId": "com.android.encrypto",
   "variantName": "release",
   "elements": [
     {

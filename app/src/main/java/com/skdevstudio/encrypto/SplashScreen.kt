@@ -1,15 +1,11 @@
 package com.skdevstudio.encrypto
 
-import android.annotation.SuppressLint
-import android.content.ContentValues
 import android.content.Intent
-import android.database.Cursor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.Menu
-import android.widget.Toast
+import com.skdevstudio.encrypto.R
 
 class SplashScreen : AppCompatActivity() {
 

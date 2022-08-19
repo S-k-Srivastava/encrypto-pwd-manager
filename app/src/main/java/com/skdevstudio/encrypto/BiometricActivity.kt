@@ -1,7 +1,6 @@
 package com.skdevstudio.encrypto
 
 import android.content.Intent
-import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -11,8 +10,8 @@ import android.widget.Toast
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
-import com.bumptech.glide.Glide
 import com.skdevstudio.encrypto.databinding.ActivityBiometricBinding
+
 import java.util.concurrent.Executor
 
 class BiometricActivity : AppCompatActivity() {

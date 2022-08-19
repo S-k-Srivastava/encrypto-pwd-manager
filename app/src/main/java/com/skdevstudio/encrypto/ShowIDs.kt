@@ -128,9 +128,8 @@ class ShowIDs : AppCompatActivity()  {
         tempUsername.addAll(username)
         tempPassword.addAll(password)
         customAdapter = CustomAdapter(this,tempData,tempUsername,tempPassword)
-        customAdapter.setOnItemClickListener(object : CustomAdapter.onItemClickListner{
+        customAdapter.setOnItemClickListener(object : CustomAdapter.onItemClickListner {
             override fun onItemClick(position: Int) {
-
             }
         })
 
