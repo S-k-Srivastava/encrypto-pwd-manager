@@ -69,7 +69,7 @@ class BiometricActivity : AppCompatActivity() {
 
         promptInfo = BiometricPrompt.PromptInfo.Builder()
             .setTitle("Encrypto")
-            .setSubtitle("Use Your FingerPrint to Authenticate...!")
+            .setSubtitle("Place your finger on the fingerprint scanner to login...!")
             .setAllowedAuthenticators(BiometricManager.Authenticators.BIOMETRIC_STRONG or BiometricManager.Authenticators.DEVICE_CREDENTIAL)
             .build()
         biometricPrompt.authenticate(promptInfo)
